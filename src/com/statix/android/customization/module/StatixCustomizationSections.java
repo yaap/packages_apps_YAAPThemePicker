@@ -9,6 +9,7 @@ import androidx.lifecycle.LifecycleOwner;
 import com.android.customization.model.grid.GridOptionsManager;
 import com.android.customization.model.grid.GridSectionController;
 import com.android.customization.model.mode.DarkModeSectionController;
+import com.android.customization.model.theme.OverlayManagerCompat;
 import com.android.customization.model.themedicon.ThemedIconSectionController;
 import com.android.customization.model.themedicon.ThemedIconSwitchProvider;
 import com.android.wallpaper.model.CustomizationSectionController;
@@ -19,6 +20,9 @@ import com.android.wallpaper.model.WallpaperPreviewNavigator;
 import com.android.wallpaper.model.WallpaperSectionController;
 import com.android.wallpaper.model.WorkspaceViewModel;
 import com.android.wallpaper.module.CustomizationSections;
+
+import com.statix.android.customization.model.iconpack.IconPackManager;
+import com.statix.android.customization.model.iconpack.IconPackSectionController;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -53,6 +57,10 @@ public final class StatixCustomizationSections implements CustomizationSections 
         // App grid section.
         sectionControllers.add(new GridSectionController(
                 GridOptionsManager.getInstance(activity), sectionNavigationController));
+
+        // Icon pack selection section.
+        sectionControllers.add(new IconPackSectionController(
+                IconPackManager.getInstance(activity, new OverlayManagerCompat(activity)), sectionNavigationController));
 
         return sectionControllers;
     }
