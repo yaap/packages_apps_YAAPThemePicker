@@ -1,4 +1,4 @@
-package com.statix.android.customization.picker.iconpack;
+package co.aospa.android.customization.picker.iconpack;
 
 import android.content.Context;
 import android.util.AttributeSet;

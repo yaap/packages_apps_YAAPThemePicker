@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.statix.android.customization.model.font;
+package co.aospa.android.customization.model.font;
 
 import static com.android.customization.model.ResourceConstants.ANDROID_PACKAGE;
 import static com.android.customization.model.ResourceConstants.OVERLAY_CATEGORY_FONT;

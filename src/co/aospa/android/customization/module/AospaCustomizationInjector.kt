@@ -1,4 +1,4 @@
-package com.statix.android.customization.module
+package co.aospa.android.customization.module
 
 import android.content.Context
 
@@ -10,7 +10,7 @@ import com.android.wallpaper.picker.MonetPreviewFragment
 
 import com.android.customization.module.DefaultCustomizationInjector
 
-public class StatixCustomizationInjector : DefaultCustomizationInjector() {
+public class AospaCustomizationInjector : DefaultCustomizationInjector() {
 
     private var customizationSections: CustomizationSections? = null
 
@@ -26,7 +26,7 @@ public class StatixCustomizationInjector : DefaultCustomizationInjector() {
 
     override fun getCustomizationSections(): CustomizationSections {
         if (customizationSections == null) {
-            customizationSections = StatixCustomizationSections()
+            customizationSections = AospaCustomizationSections()
         }
         return customizationSections!!
     }

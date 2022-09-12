@@ -1,16 +1,17 @@
 //
 // Copyright (C) 2022 StatiXOS
+// Copyright (C) 2022 Paranoid Android
 // SPDX-License-Identifer: Apache-2.0
 //
 
 package {
-    default_applicable_licenses: ["packages_apps_Statix_ThemePicker_license"],
+    default_applicable_licenses: ["packages_apps_Aospa_ThemePicker_license"],
 }
 
 // Added automatically by a large-scale-change
 // See: http://go/android-license-faq
 license {
-    name: "packages_apps_Statix_ThemePicker_license",
+    name: "packages_apps_Aospa_ThemePicker_license",
     visibility: [":__subpackages__"],
     license_kinds: [
         "SPDX-license-identifier-Apache-2.0",
@@ -21,7 +22,7 @@ license {
 }
 
 filegroup {
-    name: "StatixThemePicker_srcs",
+    name: "ParanoidThemePicker_srcs",
     srcs: [
         "src/**/*.java",
         "src/**/*.kt",
@@ -29,31 +30,31 @@ filegroup {
 }
 
 filegroup {
-    name: "StatixThemePicker_Manifest",
+    name: "ParanoidThemePicker_Manifest",
     srcs: [
         "AndroidManifest.xml",
     ],
 }
 
 genrule {
-    name: "StatixThemePicker_res",
+    name: "ParanoidThemePicker_res",
     tools: ["soong_zip"],
     srcs: [
         "res/**/*"
     ],
-    out: ["StatixThemePicker_res.zip"],
+    out: ["ParanoidThemePicker_res.zip"],
     cmd: "INPUTS=($(in)) && "
         + "RES_DIR=$$(dirname $$(dirname $${INPUTS[0]})) && "
         + "$(location soong_zip) -o $(out) -C $$RES_DIR -D $$RES_DIR"
 }
 
 android_library {
-    name: "StatixThemePicker-core",
+    name: "ParanoidThemePicker-core",
 
     static_libs: [
         "guava",
         "monet",
-	"renderscript_toolkit",
+        "renderscript_toolkit",
         "wallpaper-common-deps",
         "SettingsLibSettingsTheme",
         "SystemUIFlagsLib",
@@ -76,16 +77,16 @@ android_library {
 // Build app code.
 //
 android_app {
-    name: "StatixThemePicker",
+    name: "ParanoidThemePicker",
 
     static_libs: [
-        "StatixThemePicker-core",
+        "ParanoidThemePicker-core",
     ],
 
     srcs: [
         ":WallpaperPicker2_srcs",
         ":ThemePicker_srcs",
-        ":StatixThemePicker_srcs",
+        ":ParanoidThemePicker_srcs",
         "src_override/**/*.java",
         "src_override/**/*.kt",
     ],
@@ -96,7 +97,7 @@ android_app {
 
     use_embedded_native_libs: true,
 
-    resource_zips: [":WallpaperPicker2_res", ":ThemePicker_res", ":StatixThemePicker_res"],
+    resource_zips: [":WallpaperPicker2_res", ":ThemePicker_res", ":ParanoidThemePicker_res"],
 
     optimize: {
         enabled: false,
@@ -115,7 +116,7 @@ android_app {
     required: [
         "privapp_whitelist_com.android.wallpaper",
         "default_permissions_com.android.wallpaper",
-        "StatixColorStub",
+        "AospaColorStub",
     ],
 }
 

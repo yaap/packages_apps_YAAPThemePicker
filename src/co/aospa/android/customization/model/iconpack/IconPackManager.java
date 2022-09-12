@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.statix.android.customization.model.iconpack;
+package co.aospa.android.customization.model.iconpack;
 
 import static com.android.customization.model.ResourceConstants.OVERLAY_CATEGORY_ICON_ANDROID;
 import static com.android.customization.model.ResourceConstants.OVERLAY_CATEGORY_ICON_SETTINGS;

@@ -1,4 +1,4 @@
-package com.statix.android.customization.picker.font;
+package co.aospa.android.customization.picker.font;
 
 import android.content.Context;
 import android.util.AttributeSet;
