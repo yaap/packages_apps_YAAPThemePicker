@@ -4,14 +4,14 @@ import android.app.Application;
 
 import com.android.wallpaper.module.InjectorProvider;
 
-import co.aospa.android.customization.module.AospaCustomizationInjector;
+import co.aospa.android.customization.module.AospaThemePickerInjector;
 
 public class AospaCustomizationPickerApplication : Application() {
 
     override fun onCreate() {
         super.onCreate()
 
-        InjectorProvider.setInjector(AospaCustomizationInjector());
+        InjectorProvider.setInjector(AospaThemePickerInjector());
     }
 
 }

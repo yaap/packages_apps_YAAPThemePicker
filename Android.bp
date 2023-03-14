@@ -51,16 +51,7 @@ genrule {
 android_library {
     name: "ParanoidThemePicker-core",
 
-    static_libs: [
-        "guava",
-        "monet",
-        "renderscript_toolkit",
-        "wallpaper-common-deps",
-        "SettingsLibSettingsTheme",
-        "SystemUIFlagsLib",
-        "SystemUI-statsd",
-        "styleprotoslite",
-    ],
+    defaults: ["ThemePicker_defaults"],
 
     optimize: {
         enabled: false,
