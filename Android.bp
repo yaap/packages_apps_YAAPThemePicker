@@ -48,6 +48,18 @@ genrule {
         + "$(location soong_zip) -o $(out) -C $$RES_DIR -D $$RES_DIR"
 }
 
+genrule {
+    name: "ParanoidThemePicker_res_overrides",
+    tools: ["soong_zip"],
+    srcs: [
+        "res_override/**/*",
+    ],
+    out: ["ThemePicker_res_overrides.zip"],
+    cmd: "INPUTS=($(in)) && "
+        + "RES_DIR=$$(dirname $$(dirname $${INPUTS[0]})) && "
+        + "$(location soong_zip) -o $(out) -C $$RES_DIR -D $$RES_DIR"
+}
+
 android_library {
     name: "ParanoidThemePicker-core",
 
@@ -88,7 +100,7 @@ android_app {
 
     use_embedded_native_libs: true,
 
-    resource_zips: [":WallpaperPicker2_res", ":ThemePicker_res", ":ParanoidThemePicker_res"],
+    resource_zips: [":WallpaperPicker2_res", ":ThemePicker_res", ":ParanoidThemePicker_res", ":ParanoidThemePicker_res_overrides"],
 
     optimize: {
         enabled: false,
