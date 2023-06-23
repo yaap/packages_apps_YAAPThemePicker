@@ -1,31 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Copyright (C) 2022 Paranoid Android
-     Licensed under the Apache License, Version 2.0 (the "License");
-     you may not use this file except in compliance with the License.
-     You may obtain a copy of the License at
-          http://www.apache.org/licenses/LICENSE-2.0
-     Unless required by applicable law or agreed to in writing, software
-     distributed under the License is distributed on an "AS IS" BASIS,
-     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-     See the License for the specific language governing permissions and
-     limitations under the License.
--->
 <resources>
 
-    <!-- Default -->
-    <color name="color_primary_default">#87d432</color>
-    <color name="color_secondary_default">#86d62f</color>
+    <!-- Color Primary is used for Accent -->
+    <color name="color_primary_bundle1">#0a8758</color>
+    <color name="color_primary_bundle2">#746bc1</color>
+    <color name="color_primary_bundle3">#fc7756</color>
+    <color name="color_primary_default">#ffffff</color>
+    <color name="color_primary_fruits1">#ffffeeb2</color>
+    <color name="color_primary_fruits2">#ffccee99</color>
+    <color name="color_primary_fruits3">#ffb1ebff</color>
+    <color name="color_primary_fruits4">#ffebdcff</color>
+    <color name="color_primary_fruits5">#ffffd8eb</color>
+    <color name="color_primary_monochromatic">#ff666666</color>
+    <color name="color_primary_rainbow1">#ffffb2b5</color>
+    <color name="color_primary_rainbow2">#ffffb868</color>
+    <color name="color_primary_rainbow3">#ffe9c44a</color>
+    <color name="color_primary_rainbow4">#ffbaf293</color>
+    <color name="color_primary_rainbow5">#ff96cbff</color>
+    <color name="color_primary_rainbow6">#ffcbbfff</color>
+    <color name="color_primary_rainbow7">#fff5acfb</color>
 
-    <!-- Blue -->
-    <color name="color_primary_blue">#1a73e8</color>
-    <color name="color_secondary_blue">#1a73e8</color>
-
-    <!-- Purple -->
-    <color name="color_primary_purple">#6f24d6</color>
-    <color name="color_secondary_purple">#dabfff</color>
-
-    <!-- Red -->
-    <color name="color_primary_red">#eb0028</color>
-    <color name="color_secondary_red">#eb0028</color>
+    <!-- Color Secondary is used for System Colors -->
+    <color name="color_secondary_bundle1">#0a8758</color>
+    <color name="color_secondary_bundle2">#746bc1</color>
+    <color name="color_secondary_bundle3">#ea775a</color>
+    <color name="color_secondary_default">#1a73e8</color>
+    <color name="color_secondary_fruits1">#ffffeeb2</color>
+    <color name="color_secondary_fruits2">#ffccee99</color>
+    <color name="color_secondary_fruits3">#ffb1ebff</color>
+    <color name="color_secondary_fruits4">#ffebdcff</color>
+    <color name="color_secondary_fruits5">#ffffd8eb</color>
+    <color name="color_secondary_monochromatic">#ff333333</color>
+    <color name="color_secondary_rainbow1">#ffffb2b5</color>
+    <color name="color_secondary_rainbow2">#ffffb868</color>
+    <color name="color_secondary_rainbow3">#ffe9c44a</color>
+    <color name="color_secondary_rainbow4">#ffbaf293</color>
+    <color name="color_secondary_rainbow5">#ff96cbff</color>
+    <color name="color_secondary_rainbow6">#ffcbbfff</color>
+    <color name="color_secondary_rainbow7">#fff5acfb</color>
 
 </resources>
