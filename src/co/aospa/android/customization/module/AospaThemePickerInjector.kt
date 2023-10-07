@@ -44,11 +44,11 @@ public class AospaThemePickerInjector : ThemePickerInjector() {
                     ),
                     getKeyguardQuickAffordancePickerInteractor(activity),
                     getKeyguardQuickAffordancePickerViewModelFactory(activity),
-                    NotificationSectionViewModel.Factory(
-                        interactor = getNotificationsInteractor(activity),
-                    ),
+                    getNotificationSectionViewModelFactory(activity),
                     getFlags(),
-                    getClockCarouselViewModel(activity),
+                    getClockCarouselViewModelFactory(
+                        getClockPickerInteractor(activity.applicationContext),
+                    ),
                     getClockViewFactory(activity),
                     getDarkModeSnapshotRestorer(activity),
                     getThemedIconSnapshotRestorer(activity),
